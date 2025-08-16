@@ -1,3 +1,24 @@
+// GREETING USER
+const greetingDiv = document.getElementById('greeting');
+
+function askName() {
+    let storedName = localStorage.getItem('userName');
+    if (!storedName) {
+        // Minta nama user pertama kali
+        let name = prompt("Halo! Siapa namamu?");
+        if (name) {
+            localStorage.setItem('userName', name);
+            storedName = name;
+        }
+    }
+    if (storedName) {
+        greetingDiv.textContent = `Hai, ${storedName}! Selamat datang di Ayam Kampoes 🐔`;
+    }
+}
+
+// Panggil fungsi saat halaman load
+window.onload = askName;
+
 const form = document.getElementById('formMessages');
 const namaInput = document.getElementById('nama');
 const emailInput = document.getElementById('email');
