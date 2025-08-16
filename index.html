@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Kampoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGASI -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#sertifikat">Sertifikat</a></li>
+            <li><a href="#messages">Messages Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER / BANNER -->
+    <header>
+        <img src="images/banner.JPG" alt="Banner Ayam Kampoes" class="banner">
+        <h1>Selamat Datang di Ayam Kampoes</h1>
+    </header>
+
+    <!-- MENU -->
+    <section id="menu">
+        <h2>Menu Kami</h2>
+        <div class="menu-item">
+            <img src="images/menu.png" alt="Menu Ayam Kampoes">
+            <p>Menu Ayam Kampoes</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section id="testimoni">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimoni-items">
+            <div class="testimoni-item">
+                <img src="images/testi3.jpg" alt="Testimoni 1">
+                <p>"Yakin kamu gamau cobain Ayam Kampoes?"</p>
+            </div>
+            <div class="testimoni-item">
+                <img src="images/testi4.jpg" alt="Testimoni 2">
+                <p>"Ayam Kampoes emang the best!!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERTIFIKAT -->
+    <section id="sertifikat">
+        <h2>Sertifikat</h2>
+        <img src="images/sertifgojek.jpg" alt="Mitra Juara Gojek">
+    </section>
+
+    <!-- MESSAGES US / FORM KONTAK -->
+    <section id="messages">
+        <h2>Messages Us</h2>
+        <form id="formMessages">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="tanggal">Tanggal Lahir:</label>
+            <input type="date" id="tanggal" required>
+
+            <label>Jenis Kelamin:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" id="male" value="Laki-laki" required>
+                <label for="male">Laki-laki</label>
+                <input type="radio" name="gender" id="female" value="Perempuan">
+                <label for="female">Perempuan</label>
+            </div>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" rows="4" required></textarea>
+
+            <button type="submit">Kirim</button>
+            <p id="errorMsg" class="error"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9c4; /* kuning pastel */
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    background-color: #f9c74f;
+    padding: 20px;
+}
+
+.banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+section {
+    padding: 20px;
+}
+
+/* NAVIGASI */
+nav {
+    background-color: #f94144;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* MENU & TESTIMONI */
+.menu-item, .testimoni-item {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.menu-item img, .testimoni-item img, #sertifikat img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimoni-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CABANG */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* FORM KONTAK / MESSAGES US */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button, textarea {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #f94144;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d90429;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
